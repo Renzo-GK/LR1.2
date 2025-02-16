@@ -26,7 +26,20 @@ try:
             print("Hmm.. okay")
 
     if age <18:
-        print("Wow, are you schoolchild?")
-      
+        def get_yes_no_2(promt2):
+            while True:
+                response = input(promt2).strip().lower()
+                if response in ["yes", "да"]:
+                    return True
+                elif response in ["no", "нет"]:
+                    return False
+                else:
+                    print("Woops.. try again please")
+        
+        if get_yes_no_2("Wow, are you schoolchild? (yes/no): "):
+            print("Good!")
+        else:
+            print("Hmm.. okay")
+
 except ValueError:
     print("Woops.. try again please")
