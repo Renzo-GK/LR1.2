@@ -1,11 +1,12 @@
+#Part 1
 print("Hello! This is programm for LR1.2 maked by Omaraschab Guseinov")
-
 print("Okay, lets do anything")
 
+#Part 2
 name = str(input("What is your name? \n"))
-
 print("Nice to meet you", name, "!")
 
+#Part 3
 age = int(input("How old are you? \n"))
 
 try:
@@ -44,4 +45,5 @@ try:
 except ValueError:
     print("Woops.. try again please")
 
+#Part 4
 print("Okay, it is done")
